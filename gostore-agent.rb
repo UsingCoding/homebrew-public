@@ -5,20 +5,20 @@
 class GostoreAgent < Formula
   desc "Agent to expose ssh keys stored in gostore over ssh-agent"
   homepage "https://github.com/UsingCoding/gostore"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.1/gostore-agent_0.0.1_darwin_x86_64.tar.gz"
-      sha256 "f397194706d17682718999d149fcfcb134ac769cce911261963103be807d541a"
+      url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.2/gostore-agent_0.0.2_darwin_x86_64.tar.gz"
+      sha256 "d6a2c81ac69ac18a602c5727306afa73650882a34b40ce4c30a3ba55930357d5"
 
       def install
         bin.install "gostore-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.1/gostore-agent_0.0.1_darwin_arm64.tar.gz"
-      sha256 "6f3e1ef7ef043b083becb001a4f04b0afef1826becc687ddfbe8c1ab849de59b"
+      url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.2/gostore-agent_0.0.2_darwin_arm64.tar.gz"
+      sha256 "a2974a7af421eea8bc62366d2a4d454e599c97c9ab2ae54b9d569ad01c542c39"
 
       def install
         bin.install "gostore-agent"
@@ -29,8 +29,8 @@ class GostoreAgent < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.1/gostore-agent_0.0.1_linux_x86_64.tar.gz"
-        sha256 "2ec740e7ec0ecd1115b73c0f1d9b321acd8c6b03e2da6978685989e9d0722ccd"
+        url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.2/gostore-agent_0.0.2_linux_x86_64.tar.gz"
+        sha256 "3e9ded8e9741aed38cc2799ac80e8650d8523e1544deac964b3f35b8596f682b"
 
         def install
           bin.install "gostore-agent"
@@ -39,8 +39,8 @@ class GostoreAgent < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.1/gostore-agent_0.0.1_linux_arm64.tar.gz"
-        sha256 "3306f8769ab849452407ff9d1f0314c62e871191937664a5a7c4868d49369048"
+        url "https://github.com/UsingCoding/gostore-agent/releases/download/v0.0.2/gostore-agent_0.0.2_linux_arm64.tar.gz"
+        sha256 "ac7cb8a4104f7ec0d95952b1df17f09b8fb87c04924d7dbdb5dec54cabeb98ae"
 
         def install
           bin.install "gostore-agent"
