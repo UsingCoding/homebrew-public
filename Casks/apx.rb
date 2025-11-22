@@ -3,7 +3,7 @@ cask "apx" do
   name "apx"
   desc "CLI wrapper for platform-specific sandboxes"
   homepage "https://github.com/UsingCoding/apx"
-  version "0.0.3"
+  version "0.0.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,31 +14,23 @@ cask "apx" do
   on_macos do
     on_intel do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_darwin_x86_64.tar.gz"
-      sha256 "2f920bd2735545e8599510082b23b70aff342100b348d34628a3e30a1a3d887b"
+      sha256 "473415ddc35f7a7d9cd3f23ced36a32cb541d6f1fb5e85b26ef8b29c08e7e75f"
     end
     on_arm do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_darwin_arm64.tar.gz"
-      sha256 "12b257285772c305ae9e953a3824f58c9f8fb4ed04707645f3a12f1b469f0532"
+      sha256 "a9dc20216b43fed52b166e3d70c1c29e6aab3135647052b01b47a4bd04b828d1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_linux_x86_64.tar.gz"
-      sha256 "55bf1f7dbbb6998e7e91e9ce2b53e6fc375c509ef941bd4be9d33a4868ff284e"
+      sha256 "fc782bb27a04ae6a6258a7ab9d94f590b3679ead96956e2d56873a84096e41e4"
     end
     on_arm do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_linux_arm64.tar.gz"
-      sha256 "d3fa5c95cc3492e7a0354bdd34b952623a6f7b579c58d196368a69e1593e2e16"
+      sha256 "4a0b4fc26d3f5e0c0edb47504763c46d0d91b840daebbdf46839888dbe1d3e2c"
     end
-  end
-
-  caveats do
-    "<<~EOS"
-    "  To activate apx helpers execute:"
-    "    - bash: echo 'eval "$(apx shellenv bash)"' >> ~/.bashrc"
-    "    - zsh:  echo 'eval "$(apx shellenv zsh)"' >> ~/.zshrc"
-    "EOS"
   end
 
   # No zap stanza required
