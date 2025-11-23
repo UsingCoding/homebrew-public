@@ -3,7 +3,7 @@ cask "apx" do
   name "apx"
   desc "CLI wrapper for platform-specific sandboxes"
   homepage "https://github.com/UsingCoding/apx"
-  version "0.0.5"
+  version "0.0.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "apx" do
   on_macos do
     on_intel do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_darwin_x86_64.tar.gz"
-      sha256 "49f2d067907003378dca03ff018e4c891720914563f27d4dcc68320357ab9c24"
+      sha256 "9605724adff7933bb0ff3f00628610def858680c2345d10cac78266d3ac825a1"
     end
     on_arm do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_darwin_arm64.tar.gz"
-      sha256 "bfed6199708ba640b19cbf275c84d82e8490d63d99153429b01bc4aac04c8ab8"
+      sha256 "aa299c88dc8974faed7313122822abb165e774504389c88c5d6341bea3fd0912"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_linux_x86_64.tar.gz"
-      sha256 "329ac063a9ae47416d58f346155aa2438995ed925780fc0c0c2aa3c6bd65a65d"
+      sha256 "57fd8a91c594e3b77b2dc585866e609185e182ef5752666af5096672df5e399d"
     end
     on_arm do
       url "https://github.com/UsingCoding/apx/releases/download/v#{version}/apx_#{version}_linux_arm64.tar.gz"
-      sha256 "b20c1077101f6a50915aaef6f9ccd5fb25f000f98abfd8a6c45fb2a79cb47028"
+      sha256 "dc264e50731c600ee515548f048154855365d888665ba1448f3810b712b6f7f8"
     end
   end
 
