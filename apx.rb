@@ -5,15 +5,15 @@
 class Apx < Formula
   desc "CLI wrapper for platform-specific sandboxes"
   homepage "https://github.com/UsingCoding/apx"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
 
   depends_on "go" => :build
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/UsingCoding/apx/releases/download/v0.0.8/apx_0.0.8_darwin_x86_64.tar.gz"
-      sha256 "78ad10f09c5cfc754a898bccfdfaf13fa3651764e6e2e707899c7c60c06c7525"
+      url "https://github.com/UsingCoding/apx/releases/download/v0.0.9/apx_0.0.9_darwin_x86_64.tar.gz"
+      sha256 "f4ef2ec81942690e29d518b56afb16a9be154911af3c3a9b5b86df1f54f27f91"
 
       def install
         ldflags = %W[
@@ -25,8 +25,8 @@ class Apx < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/UsingCoding/apx/releases/download/v0.0.8/apx_0.0.8_darwin_arm64.tar.gz"
-      sha256 "22a50a372c7e5b2c971768b3575f425de2da9c3092732363f11ad3a2023e0867"
+      url "https://github.com/UsingCoding/apx/releases/download/v0.0.9/apx_0.0.9_darwin_arm64.tar.gz"
+      sha256 "379d345aff2d7eebb61de8ae5480e014920909ecc465e16f43b3951a840915a1"
 
       def install
         ldflags = %W[
@@ -41,8 +41,8 @@ class Apx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UsingCoding/apx/releases/download/v0.0.8/apx_0.0.8_linux_x86_64.tar.gz"
-      sha256 "bd7b6b86fd52b051c3c9686e07b962bd847652d29f04b025354c4ecc0afc6e3e"
+      url "https://github.com/UsingCoding/apx/releases/download/v0.0.9/apx_0.0.9_linux_x86_64.tar.gz"
+      sha256 "425e8a3edb777621363cad09cd70c1d3d8096d92f81f1705760b1fdd6022c7bb"
       def install
         ldflags = %W[
           -s -w
@@ -53,8 +53,8 @@ class Apx < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UsingCoding/apx/releases/download/v0.0.8/apx_0.0.8_linux_arm64.tar.gz"
-      sha256 "1570dc7e84880574ffb65a9ed252002180a50a5f195371f46c0f1ec71b79850a"
+      url "https://github.com/UsingCoding/apx/releases/download/v0.0.9/apx_0.0.9_linux_arm64.tar.gz"
+      sha256 "6bf2684777945abca8f5bbe2feca0856bf617ef20b0d0830cc7d743c2bcc2253"
       def install
         ldflags = %W[
           -s -w
