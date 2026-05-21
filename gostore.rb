@@ -5,20 +5,20 @@
 class Gostore < Formula
   desc "Secret store manager"
   homepage "https://github.com/UsingCoding/gostore"
-  version "1.6.0"
+  version "1.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/UsingCoding/gostore/releases/download/v1.6.0/gostore_1.6.0_darwin_x86_64.tar.gz"
-      sha256 "bc339f2c3959aa4d7f49921f7817020994852df579070a380dfed4a165c1121a"
+      url "https://github.com/UsingCoding/gostore/releases/download/v1.7.0/gostore_1.7.0_darwin_x86_64.tar.gz"
+      sha256 "298b15a6ad43941e025695819e17f8938fd96b098adbeab2ff3639016bb1cc52"
 
       def install
         bin.install "gostore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/UsingCoding/gostore/releases/download/v1.6.0/gostore_1.6.0_darwin_arm64.tar.gz"
-      sha256 "da3cc592c41bcbf91f58ae0aa6977b912742ae7b32e1bafdc6e69eea9d1b3235"
+      url "https://github.com/UsingCoding/gostore/releases/download/v1.7.0/gostore_1.7.0_darwin_arm64.tar.gz"
+      sha256 "6f7b901a98d65614e011348c63723ef494c882752fbd2336daed3e3f8ec81274"
 
       def install
         bin.install "gostore"
@@ -28,15 +28,15 @@ class Gostore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UsingCoding/gostore/releases/download/v1.6.0/gostore_1.6.0_linux_x86_64.tar.gz"
-      sha256 "9446da1dfe830a34ba641f2dd4d8f8f20191313d0017b906f4ebbd8c76471e5f"
+      url "https://github.com/UsingCoding/gostore/releases/download/v1.7.0/gostore_1.7.0_linux_x86_64.tar.gz"
+      sha256 "2762922b3cf20375fd211c54b69be41e2c9dc45227642b3548d67f3b72e11f12"
       def install
         bin.install "gostore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UsingCoding/gostore/releases/download/v1.6.0/gostore_1.6.0_linux_arm64.tar.gz"
-      sha256 "ea051a59c22a9187ff414853009124f1da4f6d54fc6273babaf647de7738a2b7"
+      url "https://github.com/UsingCoding/gostore/releases/download/v1.7.0/gostore_1.7.0_linux_arm64.tar.gz"
+      sha256 "2517590ffa220c3da02cf7b76bbb99dbc56341eb3d30a2ed37c7fe960b891bd8"
       def install
         bin.install "gostore"
       end
